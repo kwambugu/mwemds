@@ -1,0 +1,125 @@
+html {
+	padding: 0;
+	margin: 0;
+	background-color: #eee;
+	display: grid;
+}
+
+
+.navigation {
+    font-family: 'Alef', 'sanserif', sans-serif;
+
+}
+
+
+
+ul {
+	list-style-type: none;
+    margin-top: 15px;
+    padding: 25px 5px 5px;
+    width: 25%;
+    min-height: 400px; 
+    position: fixed;
+ 	overflow: auto;
+ 	background-color: rgb(36,166,166);
+ 	border-radius: 2px;
+ 	font-size:1.5em;
+}
+
+
+ li a {
+    display: block;
+    color: #000;
+    padding: 10px 8px 20px 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+li a:hover {
+    background-color: #94BDAD;
+    color: white;
+}
+
+.content {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.indiv-data {
+    padding-top: 50px;
+    padding-left:400px;
+     height:500px;
+    width:1050px; 
+}
+
+table ,th,td {
+    width:70%;
+    height:70%;
+    border: 1px solid #00141C;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.settings {
+	height:400px;
+	width: 500px;
+	background-color: #E3F1CA;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 15px;
+	border: 1px solid #080000;
+}
+
+.formSettings {
+	padding-top: 10px;
+}
+
+.wrapper {
+
+	margin: auto;
+	height: 400px;
+    border: 1px solid #fff;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(52, 73, 31, 0.7);
+    border-radius: 4px;
+    margin: 150px auto 0;
+}
+
+input[type ="text"], input[type ="password"]{
+    width: 400px;
+    height:50px;
+    font-size: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.btn-login {
+    padding: 15px 30px;
+    background-color: rgb(10, 255, 16);
+    border:none;
+    border-radius: 4px;
+    border-bottom: 4px solid #06A30A;
+}
+
+.form-layout {
+    background: url(images/user.png);
+    content: "\(00)";
+    font-family: "Tahoma";
+    font-size: 30px;
+    color: #9855986;
+    padding-top:5px;
+    font-size: 35px; 
+}
