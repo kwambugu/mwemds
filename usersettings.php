@@ -1,6 +1,6 @@
 <?php
 include('php/connection.php');
-require_once 'admin.php';
+require_once 'users.php';
 
 if($_POST) {
 	$currentpassword = $_POST['currentpassword'];
@@ -37,32 +37,23 @@ if($_POST) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php include('views/title.php') ?></title>
 
-    <style>
-        #error{
-            color: red;
-        }
-    </style>
-<link rel="stylesheet" href="adminstyles.css"  />
+
+<link rel="stylesheet" href="styles.css"  />
 </head>
 <body>
-  <div id="sidebar">
-    <ul class="sidebar-menu">
-        <p class="centered">
-            <a href="adminsettings.php"><img src="images/adminicon.png" class="image-circle" width="60">
-            </a>
-        </p>
-        <h5 class="centered">ADMIN</h5>
-        <li><a href="adminhomepage.php">Dashboard</a></li>
-        <li><a href="adduser.php">Add New User</a></li>
-        <li><a href="payments.php">Payment</a></li>
-        <li><a href="settings.php">Settings</a></li>
-        <li><a href="php/logout.php">Logout</a></li>
-    </ul>
+
+  <div class="sidenav">
+  <a href="homepage.php">Home</a>
+  <a href="usersettings.php">Settings</a>
+  <a href="useraccount.php">User Account</a>
+  <a href="php/logout.php">Log out</a>
   </div>
-      <div id="maincontent">
-          <section class="wrapper">
-              <div class="header">
-              </div>
+
+  <div class="container">
+      <div class="header">
+
+          </div>
+
 					<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
 <table>
        <tr>
@@ -70,7 +61,7 @@ if($_POST) {
                Current Password
            </th>
                 <td>
-                    <input type="password" name="currentpassword" autocomplete="off" placeholder="Current Password" />
+                    <input type="password" name="currentpassword" autocomplete="off" placeholder="Current Password" required />
                </td>
        </tr>
        <tr>
@@ -78,7 +69,7 @@ if($_POST) {
                New Password
            </th>
                 <td>
-                    <input type="password" name="password" autocomplete="off" placeholder="New Password" />
+                    <input type="password" name="password" autocomplete="off" placeholder="New Password" required/>
                 </td>
        </tr>
        <tr>
@@ -86,7 +77,7 @@ if($_POST) {
                Conform Password
            </th>
                 <td>
-                    <input type="password" name="conformpassword" autocomplete="off" placeholder="Confrom Password" />
+                    <input type="password" name="conformpassword" autocomplete="off" placeholder="Confrom Password" required />
                 </td>
        </tr>
        <tr>
@@ -96,11 +87,11 @@ if($_POST) {
        </tr>
 </table>
 </form>
-</div>
-      <footer class="site-footer">
-      <div class="text-center">
-       2018 @ mwedms
-       </div>
+  </div>
+  <div class="footer">
+      <footer>
+      <p>mwedms &copy; 2018</p>
       </footer>
+  </div>
 </body>
 </html>
